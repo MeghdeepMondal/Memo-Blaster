@@ -48,16 +48,27 @@
       >
     </p>
     <!--FORM-->
-    <form align="center" action="https://www.boringcompany.com/not-a-flamethrower" method="POST">
-    Name <br />
-    <input type="text" name="Name" /> <br /><br />
-    Email <br />
-    <input type="email" name="Email" /> <br /><br />
-    Password <br />
-    <input type="password" name="Password" /> <br /><br />
-    Send <br />
-    <input type="submit" name="Submit" />
-</form>
+    <form align="center">
+      Name <br />
+      <input type="text" name="Name" /> <br /><br />
+      Email <br />
+      <input type="email" name="Email" /> <br /><br />
+      Password <br />
+      <input type="password" name="Password" /> <br /><br />
+      <button id="redirectButton">Go to Link</button>
+    </form>
+
+    <script>
+      // Get the button element by its id
+      var button = document.getElementById("redirectButton");
+
+      // Add a click event listener to the button
+      button.addEventListener("click", function () {
+        // Redirect to the desired link when the button is clicked
+        window.location.href =
+          "https://www.boringcompany.com/not-a-flamethrower";
+      });
+    </script>
 
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>
